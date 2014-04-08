@@ -1,5 +1,5 @@
 ( function() {
-  var fix, frame, defaultConfig;
+  var fixtable, frame, defaultConfig;
 
   defaultConfig = {
     width: 800,
@@ -223,7 +223,7 @@
     }
   };
 
-  fix = function fix( options ) {
+  fixtable = function fixtable( options ) {
     var config;
 
     config = jQuery.extend( {}, defaultConfig, options );
@@ -233,5 +233,5 @@
     frame.sync();
   };
 
-  jQuery.fn.fix = fix;
+  jQuery.fn.fixtable = fixtable;
 })();
